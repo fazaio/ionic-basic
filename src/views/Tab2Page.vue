@@ -2,22 +2,33 @@
   <ion-page>
     <ion-header>
       <ion-toolbar>
-        <ion-title>Tab 2</ion-title>
+        <ion-title>Daftar view</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content :fullscreen="true">
       <ion-header collapse="condense">
         <ion-toolbar>
-          <ion-title size="large">Tab 2</ion-title>
+          <ion-title size="large">Tab 1</ion-title>
         </ion-toolbar>
       </ion-header>
 
-      <ExploreContainer name="Tab 2 page" />
+      <ion-item class="ion-padding">
+        <ion-input label="Email"></ion-input>
+      </ion-item>
+
+      <ion-item class="ion-padding">
+        <ion-input label="Password"></ion-input>
+      </ion-item>
+
+      <ion-button class="ion-padding" expand="full">Buat Akun</ion-button>      
+
+      <!-- <ExploreContainer name="Tab 1 page" /> -->
     </ion-content>
   </ion-page>
 </template>
 
 <script setup lang="ts">
-import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
-import ExploreContainer from '@/components/ExploreContainer.vue';
+import { IonPage, IonItem, IonButton, IonInput, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
+
+
 </script>
